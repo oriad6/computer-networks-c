@@ -1,4 +1,4 @@
-# Computer Networks Project   
+# 💻 Computer Networks Project   
 This project was developed as part of an Advanced Programming in C academic course.  
 The goal is to model a computer network and implement algorithms that allow a company to purchase the minimum set of communication lines such that all computers in the network remain connected, with minimal total cost.  
 
@@ -18,10 +18,10 @@ The goal is to model a computer network and implement algorithms that allow a co
 | File             | Description                                                                 |
 |------------------|-----------------------------------------------------------------------------|
 | `base.h`         | Common definitions, constants, structs, and memory check                    |
-| `build_net.c/.h` | Network construction and sorted edge insertion (Step 1)                     |
-| `prim.c/.h`      | Implementation of Prim's MST algorithm (Step 2)                             |
-| `paths.c/.h`     | Builds PrimPaths (reconstructs path-tree from Prim parent array) (Step 3)   |
-| `path_finding.c/.h` | DFS-based path finding on path-trees (used for queries) (Step 4)          |
+| `build_net.c/.h` | Network construction and sorted edge insertion                              |
+| `prim.c/.h`      | Implementation of Prim's MST algorithm                                      |
+| `paths.c/.h`     | Builds PrimPaths (reconstructs path-tree from Prim parent array)            |
+| `path_finding.c/.h` | DFS-based path finding on path-trees (used for queries)                  |
 | `free.c/.h`      | Memory deallocation for all modules                                         |
 | `main.c`         | Entry point: manages input/output and runs steps                            |
 
