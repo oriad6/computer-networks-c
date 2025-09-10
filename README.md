@@ -46,6 +46,14 @@ The goal is to model a computer network and implement algorithms that allow a co
 
 ---
 
+## 📚 Algorithms & Data Structures
+
+- Graph representation: adjacency lists (`EdgeList`)  
+- Minimum Spanning Tree: Prim’s algorithm (`Prim[]` array to store parents)  
+- Path search: DFS with color marking (`WHITE`, `GRAY`, `BLACK`) and parent tracking  
+
+---
+
 ## 📖 Sample Run
 
 Enter number of computers: 5  
