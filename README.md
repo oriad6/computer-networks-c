@@ -49,10 +49,10 @@ Each step is implemented in a separate module with .c and .h files:
 ## 📖 Example Input / Output  
 
 **Input format**  
-n # number of computers
-m # number of edges
-a b cost # m lines describing edges
-first last # two computers to find path between
+n # number of computers \n
+m # number of edges \n
+a b cost # m lines describing edges \n
+first last # two computers to find path between \n
 
 **Example:**  
 5
