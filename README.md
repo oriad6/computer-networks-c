@@ -1,6 +1,4 @@
-# Computer Networks Project 
-
-## 📌 Project Overview  
+# Computer Networks Project   
 This project was developed as part of an Advanced Programming in C academic course.  
 The goal is to model a computer network and implement algorithms that allow a company to purchase the minimum set of communication lines such that all computers in the network remain connected, with minimal total cost.  
 
@@ -15,15 +13,17 @@ The goal is to model a computer network and implement algorithms that allow a co
 
 ---
 
-## 🗂️ Project Structure  
-Each step is implemented in a separate module with .c and .h files:
-├── base.h # Common definitions, constants, structs, and memory check
-├── build_net.c/h # Network construction and edge insertion
-├── path_finding.c/h # DFS-based path finding on Prim’s tree
-├── paths.c/.h # Builds PrimPaths (reconstructs path-tree from Prim parent array)
-├── prim.c/h # Implementation of Prim's MST algorithm
-├── free.c/h # Memory deallocation for all modules
-├── main.c # Entry point: manages input/output and runs steps
+## 🗂️ Project Structure
+
+| File             | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| `base.h`         | Common definitions, constants, structs, and memory check                    |
+| `build_net.c/.h` | Network construction and sorted edge insertion (Step 1)                     |
+| `prim.c/.h`      | Implementation of Prim's MST algorithm (Step 2)                             |
+| `paths.c/.h`     | Builds PrimPaths (reconstructs path-tree from Prim parent array) (Step 3)   |
+| `path_finding.c/.h` | DFS-based path finding on path-trees (used for queries) (Step 4)          |
+| `free.c/.h`      | Memory deallocation for all modules                                         |
+| `main.c`         | Entry point: manages input/output and runs steps                            |
 
 ---
 
@@ -46,29 +46,19 @@ Each step is implemented in a separate module with .c and .h files:
 
 ---
 
-## 📖 Example Input / Output  
+## 📖 Sample Run
 
-**Input format**  
-n # number of computers \n
-m # number of edges \n
-a b cost # m lines describing edges \n
-first last # two computers to find path between \n
+Enter number of computers: 5
+Enter number of connections: 6
+Connection: 0 1 3
+Connection: 0 2 5
+Connection: 1 2 1
+Connection: 1 3 4
+Connection: 2 3 2
+Connection: 3 4 6
 
-**Example:**  
-5
-6
-0 1 10
-0 2 5
-1 2 2
-1 3 8
-2 4 7
-3 4 3
-0 4
-
-**Output:**  
-0 2 4
-
-(Meaning: the path from node 0 to 4 is 0 → 2 → 4)
+Enter source and destination: 0 4
+Path: 0 -> 1 -> 2 -> 3 -> 4
 
 ---
 
