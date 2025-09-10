@@ -1,4 +1,4 @@
-# 💻 Computer Networks Project   
+# 💻 Computers Network Project   
 This project was developed as part of an "Advanced Programming in C" academic course.  
 The goal is to model a computer network and implement algorithms that allow a company to purchase the minimum set of communication lines such that all computers in the network remain connected, with minimal total cost.  
 
