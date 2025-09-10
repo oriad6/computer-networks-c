@@ -1,22 +1,77 @@
-# Computer Networks Project
-A modular C project developed as part of a first-year Computer Science course: Advanced Programming in C.
-Implementation of computer network communication,  including construction of a Minimum Spanning Tree (MST) using Prim's algorithm,  network path building, and path search between computers using Depth-First Search (DFS).  The project demonstrates data structures, graph traversal,  and efficient network cost minimization.
+# Computer Networks Project 
 
-✅ Features
-⚖️ Graph building from user input
-📊 Minimum Spanning Tree (MST) using Prim's algorithm
-🧩 Path reconstruction from root to all nodes
-⏩ Path query between any two nodes using DFS
-♻️ Full memory cleanup on exit
+## 📌 Project Overview  
+This project was developed as part of an Advanced Programming in C academic course.  
+The goal is to model a computer network and implement algorithms that allow a company to purchase the minimum set of communication lines such that all computers in the network remain connected, with minimal total cost.  
 
-📁 Project Structure
-Each task is implemented in a separate module with .c and .h files:
+---
 
-File	Purpose
-main.c	Main driver: runs all 4 tasks step-by-step
-network.c/h	Task 1: Build graph from input
-prim.c/h	Task 2: Calculate MST using Prim
-paths.c/h	Task 3: Build paths from root
-routing.c/h	Task 4: Find and print path between nodes
-free.c/h	Frees all memory
-base.h	Shared structs and typedefs
+## ✅ Features
+- Graph building from user input
+- Minimum Spanning Tree (MST) using Prim's algorithm
+- Path reconstruction from root to all nodes
+- Path query between any two nodes using DFS
+- Full memory cleanup on exit
+
+---
+
+## 🗂️ Project Structure  
+Each step is implemented in a separate module with .c and .h files:
+├── base.h # Common definitions, constants, structs, and memory check
+├── build_net.c/h # Network construction and edge insertion
+├── path_finding.c/h # DFS-based path finding on Prim’s tree
+├── paths.c/.h # Builds PrimPaths (reconstructs path-tree from Prim parent array)
+├── prim.c/h # Implementation of Prim's MST algorithm
+├── free.c/h # Memory deallocation for all modules
+├── main.c # Entry point: manages input/output and runs steps
+
+---
+
+## ▶️ How It Works  
+
+**Step 1: Network Building**  
+- Reads number of computers and connections  
+- Builds adjacency lists sorted by neighbor ID  
+
+**Step 2: Prim's Algorithm**  
+- Builds MST starting from node 0  
+- Uses a candidate list as a priority queue  
+
+**Step 3: Build Paths**  
+- For each node, reconstructs path from root (node 0) using parent array  
+
+**Step 4: Query Path**  
+- Prompts user for two computers  
+- Uses DFS on path trees to find and print the route  
+
+---
+
+## 📖 Example Input / Output  
+
+**Input format**  
+n # number of computers
+m # number of edges
+a b cost # m lines describing edges
+first last # two computers to find path between
+
+**Example:**  
+5
+6
+0 1 10
+0 2 5
+1 2 2
+1 3 8
+2 4 7
+3 4 3
+0 4
+
+**Output:**  
+0 2 4
+
+(Meaning: the path from node 0 to 4 is 0 → 2 → 4)
+
+---
+
+## 👤 Author  
+Project developed by Ori Adani as part of an academic course in advanced C programming.  
+
