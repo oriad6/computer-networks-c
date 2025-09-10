@@ -48,17 +48,17 @@ The goal is to model a computer network and implement algorithms that allow a co
 
 ## 📖 Sample Run
 
-Enter number of computers: 5
-Enter number of connections: 6
-Connection: 0 1 3
-Connection: 0 2 5
-Connection: 1 2 1
-Connection: 1 3 4
-Connection: 2 3 2
-Connection: 3 4 6
+Enter number of computers: 5  
+Enter number of connections: 6  
+Connection: 0 1 3  
+Connection: 0 2 5  
+Connection: 1 2 1  
+Connection: 1 3 4  
+Connection: 2 3 2  
+Connection: 3 4 6  
 
-Enter source and destination: 0 4
-Path: 0 -> 1 -> 2 -> 3 -> 4
+Enter source and destination: 0 4  
+Path: 0 -> 1 -> 2 -> 3 -> 4  
 
 ---
 
